@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Merriweather', serif;
+}
+
+body{
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, hsl(69, 91%, 60%));
+}
+
+.wrapper{
+    width: calc(100% - 10%);
+    background-color: #f7f0f0;
+    margin: 0 auto;
+}
+
+.main{
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.main-title{
+    font-weight: 900;
+    font-size: 3em;
+    width: max-content;
+    margin: 10px auto 50px;
+    cursor: pointer;
+}
+
+.main-title:hover{
+    text-decoration: underline;
+}
+
+.items{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+
+.item{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.item:hover{
+    opacity: 0.9;
+}
+
+.img{
+    width: 100%;
+}
+
+.info-block{
+    padding: 5px;
+    background-color: hsl(165, 8%, 91%);
+}
+
+
+.item-title{
+    text-align: center;
+}
+
+.price-block{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+    align-items: center;
+}
+
+.price{
+    font-weight: 900;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.btn-for-buy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 50px;
+    font-weight: 900;
+    font-size: 16px;
+    background: linear-gradient( hsl(27, 91%, 47%), rgb(212, 248, 5));
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-for-buy:hover{
+    opacity: 0.8;
+    color: black;
+}
+
+.footer{
+    background-color: rgb(78, 76, 76);
+    padding: 20px;
+}
+
+.footer-block{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    color: #fff;
+}
+
+.footer-block > img{
+    width: 22px;
+    margin-right: 5px;
+}
+
+.inst-link{
+    color: white;
+    text-decoration: underline;
+    margin-left: 2px;
+}
+
+@media (max-width: 1300px) {
+    .items{
+        grid-template-columns: repeat(4, 1fr);
+    }
+  }
+@media (max-width: 1130px){
+    .items{
+        grid-template-columns: repeat(3, 1fr);
+    }
+  }
+@media (max-width: 850px) {
+    .items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-block{font-size: 10px;}
+    .inst-link{font-size: 10px;}
+  }
+
+@media (max-width: 575px) {
+    .items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+  }
